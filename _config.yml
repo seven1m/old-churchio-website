@@ -1,0 +1,29 @@
+# standard jekyll configuration
+
+permalink: date
+pygments: true
+exclude: ['Rakefile', 'README.md', 'config.rb', 'Gemfile', 'Gemfile.lock']
+markdown: rdiscount
+
+# configuration required for some pages
+
+domain: church.io
+title: Church.IO
+tagline: a community of people building open source church software
+author: Tim Morgan
+email: tim@timmorgan.org
+current_version: 0.1
+
+# configuration for ehancements, uncomment to enable
+
+# feedburner:
+#   id: feedburnerid
+
+google_analytics:
+  account: UA-5354170-8
+
+github:
+  username: churchio
+
+# disqus:
+#   id: disqusid

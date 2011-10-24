@@ -1,0 +1,322 @@
+.highlight {
+  background: #ffffff;
+}
+.highlight .c {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+.highlight .k, .highlight .o {
+  font-weight: bold;
+}
+.highlight .cm {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .c1 {
+  color: #999988;
+  font-style: italic;
+}
+.highlight .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+.highlight .gd .x {
+  color: #000000;
+  background-color: #ffaaaa;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+.highlight .gi .x {
+  color: #000000;
+  background-color: #aaffaa;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .kc, .highlight .kd, .highlight .kp, .highlight .kr {
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .m {
+  color: #009999;
+}
+.highlight .s {
+  color: #d14;
+}
+.highlight .na {
+  color: #008080;
+}
+.highlight .nb {
+  color: #0086B3;
+}
+.highlight .nc {
+  color: #445588;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #008080;
+}
+.highlight .ni {
+  color: #800080;
+}
+.highlight .ne, .highlight .nf {
+  color: #990000;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #555555;
+}
+.highlight .nt {
+  color: #000080;
+}
+.highlight .nv {
+  color: #008080;
+}
+.highlight .ow {
+  font-weight: bold;
+}
+.highlight .w {
+  color: #bbbbbb;
+}
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo {
+  color: #009999;
+}
+.highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx {
+  color: #d14;
+}
+.highlight .sr {
+  color: #009926;
+}
+.highlight .s1 {
+  color: #d14;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .bp {
+  color: #999999;
+}
+.highlight .vc, .highlight .vg, .highlight .vi {
+  color: #008080;
+}
+.highlight .il {
+  color: #009999;
+}
+
+/* Generic -------------------- */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #cccccc url(/images/bg.png);
+  min-height: 100%;
+}
+
+header {
+  background-color: #fff;
+  padding: 25px 0 35px 0;
+  position: relative;
+  z-index: 2;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+header, header h1, header a {
+  color: #555;
+  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+}
+header h1 {
+  margin: 0;
+  font-family: Abel, Helvetica, Arial, sans-serif;
+  font-size: 24pt;
+  letter-spacing: -2pt;
+}
+header .logo {
+  float: left;
+  margin-right: 15px;
+}
+header .tagline {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 14pt;
+  color: #777;
+}
+header nav {
+  padding: 20px 0 0 0;
+  float: right;
+}
+
+#main {
+  padding-top: 35px;
+  min-height: 100px;
+  position: relative;
+  z-index: 1;
+}
+#main #ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+h2, h3, h4, h5 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: Abel, Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+li {
+  color: #404040;
+}
+
+.stripe {
+  clear: both;
+  background-color: #fff;
+  padding: 10px 50px;
+  margin: 20px -50px;
+}
+
+.open {
+  background: white url(/images/open.png) top right no-repeat;
+}
+
+.disclaimer {
+  font-size: 9pt;
+  color: #999;
+}
+.disclaimer a {
+  color: #999;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Home -------------------- */
+.screenshot {
+  position: relative;
+  width: 512px;
+  height: 312px;
+  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  float: left;
+  margin: 0 30px 35px 0;
+  overflow: hidden;
+}
+.screenshot img {
+  border: 6px solid #fff;
+}
+.screenshot .ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  position: absolute;
+  left: -3em;
+  bottom: 2.5em;
+  /* 45 deg ccw rotation */
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+}
+.screenshot .ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+}
+
+.headline {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 24pt;
+  color: #d32e3f;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+  margin-bottom: 20px;
+}
+
+ul.features {
+  margin-top: 20px;
+  overflow: hidden;
+  list-style-position: inside;
+  list-style-type: none;
+}
+ul.features li {
+  padding: 0 0 10px 32px;
+  background: url(/images/arrow.png) top left no-repeat;
+}
+
+.btn.large {
+  font-size: 18px;
+}
+
+ul.logos {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+ul.logos li {
+  display: inline-block;
+  text-align: center;
+  font-size: 10pt;
+  margin-right: 20px;
+}
+ul.logos li a {
+  color: #404040;
+}
+ul.logos li a:hover {
+  text-decoration: none;
+}
