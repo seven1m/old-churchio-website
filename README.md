@@ -14,13 +14,11 @@ Fire up Compass and Jekyll:
     compass watch --sass-dir _sass --css-dir stylesheets
     jekyll --server --auto
 
-To publish, link your DocumentRoot to `_site`.
-
 ## Copyright
 
 The GitHub, Ruby, and Facebook logos (and any others present in this package) are copyright their respective owners.
 
-The ![Church.IO Logo](/images/logo.png) logo is copyright &copy; 2011, Tim Morgan and TJRM, Inc. All rights reserved. Do not use without permission.
+The ![Church.IO Logo](/churchio/website/raw/master/images/logo.png) logo is copyright &copy; 2011, Tim Morgan and TJRM, Inc. All rights reserved. Do not use without permission.
 
 Other content is copyright &copy; 2011 Tim Morgan and TJRM, Inc., and is released under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
