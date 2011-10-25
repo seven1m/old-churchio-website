@@ -188,4 +188,13 @@ ul.logos {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 12pt;
   padding: 10px;
+  margin: 5px 0;
+}
+
+.hint {
+  p {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
 }
