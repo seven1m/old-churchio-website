@@ -1,6 +1,6 @@
 ---
 layout: default
-description: A description about my blog homepage
+description: The blog of Church.IO, a community of people building open source church software.
 ---
 
 <div id="posts">
@@ -8,17 +8,6 @@ description: A description about my blog homepage
   <ul>
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div id="pages">
-  <h2>Pages</h2>
-  <ul>
-    {% for page in site.html_pages %}
-      {% if page.title %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
     {% endfor %}
   </ul>
 </div>
