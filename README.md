@@ -9,10 +9,13 @@ Clone the website and install necessary gems:
     git clone git://github.com/churchio/website.git
     bundle install
 
-Fire up Compass and Jekyll:
+Fire up the dev server:
 
-    compass watch --sass-dir _sass --css-dir stylesheets
-    jekyll --server --auto
+    rake
+
+Build for deployment:
+
+    rake build
 
 ## Copyright
 
