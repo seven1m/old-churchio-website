@@ -19,7 +19,7 @@ Build for deployment:
 
 ## Copyright
 
-The GitHub, Ruby, and Facebook logos (and any others present in this package) are copyright their respective owners.
+The GitHub, Ruby, Facebook, Heroku, and PostgreSQL logos (and any others present in this package) are copyright their respective owners.
 
 The ![Church.IO Logo](/churchio/website/raw/master/favicon.png) logo and the name Church.IO are trademark and copyright &copy; 2011, Tim Morgan and TJRM, Inc. All rights reserved. Do not use without permission.
 

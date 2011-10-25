@@ -309,14 +309,14 @@ ul.features li {
 
 ul.logos {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 20px 0;
   text-align: center;
 }
 ul.logos li {
   display: inline-block;
   text-align: center;
   font-size: 10pt;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 ul.logos li a {
   color: #404040;

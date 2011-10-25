@@ -164,13 +164,13 @@ ul.features {
 
 ul.logos {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 20px 0;
   text-align: center;
   li {
     display: inline-block;
     text-align: center;
     font-size: 10pt;
-    margin-right: 20px;
+    margin: 0 15px;
     a {
       color: #404040;
       &:hover {
