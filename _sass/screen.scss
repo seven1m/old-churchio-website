@@ -60,7 +60,11 @@ header {
   }
 }
 
-h2, h3, h4, h5 {
+h2 {
+  margin: 10px 0;
+}
+
+h3, h4, h5 {
   margin-bottom: 5px;
 }
 
@@ -174,4 +178,14 @@ ul.logos {
       }
     }
   }
+}
+
+/* Install -------------------- */
+
+.console {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 12pt;
+  padding: 10px;
 }

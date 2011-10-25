@@ -4,7 +4,7 @@
  <title>Church.IO</title>
  <link href="http://church.io/atom.xml" rel="self"/>
  <link href="http://church.io/"/>
- <updated>2011-10-24T18:39:21-05:00</updated>
+ <updated>2011-10-25T00:10:11-05:00</updated>
  <id>http://church.io/</id>
  <author>
    <name>Tim Morgan</name>
@@ -13,20 +13,11 @@
 
  
  <entry>
-   <title>Second Post</title>
-   <link href="http://church.io/2010/11/10/second-post.html"/>
-   <updated>2010-11-10T00:00:00-06:00</updated>
-   <id>http://church.io/2010/11/10/second-post</id>
-   <content type="html">&lt;p&gt;Liquid error: undefined method `join' for #&amp;lt;String:0x00000001c8edc0&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
    <title>First post</title>
    <link href="http://church.io/2010/11/01/first-post.html"/>
    <updated>2010-11-01T00:00:00-05:00</updated>
    <id>http://church.io/2010/11/01/first-post</id>
-   <content type="html">&lt;p&gt;This is the first post.  It has been updated since the post so has a last_updated value in the frontmatter.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Hello world.&lt;/p&gt;
 </content>
  </entry>
  

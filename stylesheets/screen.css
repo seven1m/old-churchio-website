@@ -200,7 +200,11 @@ header nav {
   border: 0;
 }
 
-h2, h3, h4, h5 {
+h2 {
+  margin: 10px 0;
+}
+
+h3, h4, h5 {
   margin-bottom: 5px;
 }
 
@@ -319,4 +323,13 @@ ul.logos li a {
 }
 ul.logos li a:hover {
   text-decoration: none;
+}
+
+/* Install -------------------- */
+.console {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 12pt;
+  padding: 10px;
 }

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Church.IO</title>
+    
+      <meta name="description" content="How to download and install Church.IO Profiles." />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Abel|Architects+Daughter|Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <script type="text/javascript" src="/javascripts/jquery-1.6.4.min.js"></script>
+    
+    
+      <!-- google analytics async -->
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5354170-8']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="/" class="btn">Home</a>
+          <a href="/blog" class="btn">Blog</a>
+          <a href="https://github.com/churchio" class="btn">Code</a>
+        </nav>
+        <a href="/"><img src="/images/logo.png" class="logo"/></a>
+        <a href="/"><h1>CHURCH.IO</h1></a>
+        <div class="tagline">a community of people building open source church software</div>
+      </div>
+    </header>
+    <div id="main">
+      <div class="container">
+        
+        <h1>Install Church.IO Profiles</h1>
+
+<p>
+  This document assumes you'll be deploying to the free cloud-based service <a href="http://heroku.com">Heroku</a>.
+  If you want to install to another service or your own dedicated server, please hop onto the
+  <a href="http://groups.google.com/group/churchio">mailing list</a> and get some help.
+</p>
+
+<h2>1. Create a Facebook "App"</h2>
+
+<p>
+  Don't let this part scare you &mdash; all you have to do is to log into Facebook and enter a few bits of information
+  to create what Facebook calls an "app."
+</p>
+
+<p>
+  For the sake of these instructions, let's pretend your church's name is "OneChurch of Grand Rapids."
+</p>
+
+<ol>
+  <li>Go to <a href="http://developers.facebook.com">developers.facebook.com</a> (log into Facebook if you're not already).</li>
+  <li>Click on "Apps" at the top.</li>
+  <li>Click the "Create New App" button.</li>
+  <li>Enter your church name, e.g. "OneChurch of Grand Rapids"</li>
+  <li>For the namespace, enter a similar name, but only with lowercase characters and dashes, e.g. "onechurch-grandrapids".</li>
+  <li>On the app settings page, click "Website" and enter URL where your app will be, "http://onechurch-grandrapids.herokuapp.com" (see note below for more help).</li>
+  <li>Now copy the App ID and App Secret from the top of the page (we'll need this in a bit).</li>
+  <li>Save changes.</li>
+</ol>
+
+<p>
+  The app URL will be selected a bit later and will be <code><strong>something</strong>.herokuapp.com</code>. If the name you choose
+  for your Heroku URL is already taken, you can choose another and come back to Facebook and change the website URL to match.
+</p>
+
+<h2>2. Install Ruby and Git</h2>
+
+<p>
+  You'll need to install Ruby and Git on your system (on your own desktop/laptop computer &mdash; not your server) in order to download
+  and deploy to Heroku.
+</p>
+
+<ol>
+  <li>
+    Visit <a href="http://rubyinstaller.org/">rubyinstaller.org</a> (if you're on Windows) or <a href="http://www.ruby-lang.org/en/downloads/">ruby-lang.org</a>
+    (for Mac or Linux) and install the appropriate package.
+  </li>
+  <li>
+    Once you have Ruby, install the <code>heroku</code> "gem" with the following command:
+    <div class="console">
+      gem install heroku
+    </div>
+  </li>
+  <li>
+    Visit <a href="http://git-scm.com/">git-scm.com</a> and click on your platform (Windows, Mac, or Linux) on the right
+    to get a download package for Git.
+  </li>
+</ol>
+
+<h2>3. Download Profiles</h2>
+
+<p>
+  We'll use Git to download the source code for Profiles, and then we'll select the stable version to deploy.
+</p>
+
+<p>
+  In a command prompt/terminal, change to the directory where you want to download the package, then type the following commands:
+</p>
+
+<p class="console">
+  git clone git://github.com/churchio/profiles.git<br/>
+  cd profiles<br/>
+  git checkout -t origin/stable
+</p>
+
+<h2>4. Configure Profiles</h2>
+
+<p>
+  There are a few settings we need to configure before installation can occur.
+</p>
+
+<ol>
+  <li>
+    Copy <code>config/settings.yml.example</code> to <code>config/settings.yml</code> and edit the file appropriately.
+    Set the <code>fb_app_id</code> and <code>fb_secret</code> to what you copied down from step one above.
+  </li>
+  <li>
+    Back in the terminal, type:
+    <div class="console">
+      rake profiles:heroku:config
+    </div>
+  </li>
+  <li>Then copy and paste the displayed commands into the terminal.</li>
+</ol>
+
+<h2>5. Deploy</h2>
+
+<p class="console">
+  git push heroku
+  heroku run rake db:migrate
+</p>
+
+<p>Visit your new site! The first user to log in is the initial admin user.</p>
+
+<h2>Getting Help</h2>
+
+<p>
+  To get help, please send a message to the <a href="http://groups.google.com/group/churchio">mailing list</a> or jump into the IRC
+  chat room <a href="http://webchat.freenode.net/?channels=church.io&uio=d4">#church.io</a> on FreeNode.
+</p>
+
+      </div>
+    </div>
+    <footer>
+      Copyright &copy; 2011, <a href="http://timmorgan.org">Tim Morgan</a> and <a href="http://tjrm.org">TJRM, Inc</a>.
+      Website source available on <a href="https://github.com/churchio/website">GitHub</a>.
+    </footer>
+  </body>
+</html>
