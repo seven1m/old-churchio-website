@@ -340,3 +340,24 @@ ul.logos li a:hover {
   margin-bottom: 10px;
   background-color: #fff;
 }
+
+/* Blog -------------------- */
+.post p {
+  margin-bottom: 15px;
+}
+.post .big-img {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.sidebar h3 {
+  margin-top: 15px;
+}

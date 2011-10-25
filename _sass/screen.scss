@@ -198,3 +198,22 @@ ul.logos {
     background-color: #fff;
   }
 }
+
+/* Blog -------------------- */
+
+.post {
+  p {
+    margin-bottom: 15px;
+  }
+  .big-img {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    @include border-radius(10px);
+    margin: 15px 0;
+  }
+}
+
+.sidebar h3 {
+  margin-top: 15px;
+}
