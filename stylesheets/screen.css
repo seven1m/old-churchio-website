@@ -325,6 +325,15 @@ ul.logos li a:hover {
   text-decoration: none;
 }
 
+.links ul {
+  list-style: none;
+  text-align: center;
+}
+.links ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
 /* Install -------------------- */
 .console {
   background-color: #333;
