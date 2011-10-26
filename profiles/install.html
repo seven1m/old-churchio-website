@@ -120,6 +120,13 @@ description: How to download and install Church.IO Profiles.
 
       <ol>
         <li>
+          Create your new Heroku app with the following command, replacing NAME with the name you chose before, e.g.
+          <code>onechurch-grandrapids</code>.
+          <div class="console">
+            heroku create --stack cedar NAME
+          </div>
+        </li>
+        <li>
           Copy <code>config/settings.yml.example</code> to <code>config/settings.yml</code> and edit the file appropriately.
           Set the <code>fb_app_id</code> and <code>fb_secret</code> to what you copied down from step one above.
         </li>
@@ -133,6 +140,10 @@ description: How to download and install Church.IO Profiles.
       </ol>
     </div>
     <div class="span4 hint">
+      <p>
+        If your chosen name is already taken, choose another and try again. Remember to go back to
+        <a href="http://developers.facebook.com">developers.facebook.com</a> and update the website URL though.
+      </p>
       <p>
         The <code>rake</code> command simply spits out the commands you need to
         type (or copy-paste) in order to configure the settings for Heroku.
