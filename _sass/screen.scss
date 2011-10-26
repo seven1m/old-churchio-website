@@ -145,7 +145,7 @@ footer {
   font-size: 24pt;
   color: #d32e3f;
   @include single-text-shadow(rgba(0, 0, 0, 0.20), 0, 3px, 3px);
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 ul.features {
