@@ -109,4 +109,4 @@ Since this tool's main focus is on *action* (the present) -- not *data* (the pas
 
 This is just  some my ideas. I won't pretend this alone is a game changer; execution and user experience will be just as (or more) important.
 
-*Thanks for reading, as always. If you have feedback or ideas, please post a comment here, catch me on Twitter ([@seven1m](http://twitter.com/seven1m))<a href="http://twitter.com/seven1m"></a>, or let's discuss in the IRC room ([#church.io on Freenode](http://webchat.freenode.net/?channels=church.io&amp;uio=d4)).*
+*Thanks for reading, as always. If you have feedback or ideas, please post a comment here, catch me on Twitter ([@seven1m](http://twitter.com/seven1m))<a href="http://twitter.com/seven1m"></a>, or let's discuss in the IRC room ([#church.io on freenode](http://webchat.freenode.net/?channels=church.io&amp;uio=d4)).*

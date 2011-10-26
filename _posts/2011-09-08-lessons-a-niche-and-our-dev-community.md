@@ -54,4 +54,4 @@ I want to nurture this community. Down the road, I'm hoping this same community,
 
 So, that's it for now. My plan is to continue to discuss church software here while promoting community around Church.IO projects, namely [Profiles](https://github.com/churchio/profiles) at the moment.
 
-As always, your thoughts are welcome here, and on Twitter [@seven1m](http://twitter.com/seven1m). I've also created an IRC chat room on Freenode called #church.io ([webchat here](http://webchat.freenode.net/?channels=church.io&amp;uio=d4 )). I should be there most days if you want to chat.
+As always, your thoughts are welcome here, and on Twitter [@seven1m](http://twitter.com/seven1m). I've also created an IRC chat room on freenode called #church.io ([webchat here](http://webchat.freenode.net/?channels=church.io&amp;uio=d4 )). I should be there most days if you want to chat.
