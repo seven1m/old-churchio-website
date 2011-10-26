@@ -351,6 +351,9 @@ ul.logos li a:hover {
 }
 
 /* Blog -------------------- */
+.post h3 span {
+  color: #555;
+}
 .post p {
   margin-bottom: 15px;
 }
