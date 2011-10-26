@@ -19,7 +19,7 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh 'rsync -rtzh --progress --delete _site/ username@servername:/var/www/websitename/'
+  sh "rsync -azh --progress --delete _site/* #{ENV['CHURCH_IO_HOST']}:/var/www/church.io/"
 end
 
 desc 'Check links for site already running on localhost:4000'
