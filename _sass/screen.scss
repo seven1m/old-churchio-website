@@ -27,7 +27,7 @@ header {
     @include single-text-shadow(rgba(0, 0, 0, 0.10), 2px, 2px, 5px)
   }
   h1 {
-    margin: 0;
+    margin: 4px 0 0 0;
     font-family: Abel, Helvetica, Arial, sans-serif;
     font-size: 24pt;
     letter-spacing: -2pt;
@@ -42,7 +42,7 @@ header {
     color: #777;
   }
   nav {
-    padding: 20px 0 0 0;
+    margin: 28px 20px 0 0;
     float: right;
   }
 }
@@ -101,6 +101,7 @@ li {
 
 footer {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 /* Home -------------------- */
@@ -110,8 +111,6 @@ footer {
   width: 512px;
   height: 312px;
   @include single-box-shadow(rgba(0, 0, 0, 0.25), 0, 0, 5px, 3px);
-  float: left;
-  margin: 0 30px 35px 0;
   overflow: hidden;
   img {
     border: 6px solid #fff;
@@ -131,7 +130,7 @@ footer {
     border: 1px solid #faa;
     color: #fff;
     display: block;
-    font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+    font: bold 9pt Helvetica, Arial, sans-serif;
     margin: 0.05em 0 0.075em 0;
     padding: 0.5em 3.5em;
     text-align: center;
@@ -150,6 +149,8 @@ footer {
 
 ul.features {
   margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
   overflow: hidden;
   list-style-position: inside;
   list-style-type: none;
@@ -163,15 +164,37 @@ ul.features {
   font-size: 18px;
 }
 
+.push-down {
+  margin-top: 25px;
+}
+
+.latest-post {
+  h3 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 7px;
+    margin: 0 0 15px 0;
+  }
+  a {
+    font-family: Abel, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14pt;
+    span {
+      color: #555;
+    }
+  }
+}
+
 ul.logos {
   list-style: none;
   margin: 10px 0 20px 0;
-  text-align: center;
   li {
     display: inline-block;
     text-align: center;
     font-size: 10pt;
-    margin: 0 15px;
+    margin-right: 22px;
+    &:last-child {
+      margin-right: 0;
+    }
     a {
       color: #404040;
       &:hover {

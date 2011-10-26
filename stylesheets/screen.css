@@ -168,7 +168,7 @@ header, header h1, header a {
   text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
 }
 header h1 {
-  margin: 0;
+  margin: 4px 0 0 0;
   font-family: Abel, Helvetica, Arial, sans-serif;
   font-size: 24pt;
   letter-spacing: -2pt;
@@ -183,7 +183,7 @@ header .tagline {
   color: #777;
 }
 header nav {
-  padding: 20px 0 0 0;
+  margin: 28px 20px 0 0;
   float: right;
 }
 
@@ -241,6 +241,7 @@ li {
 
 footer {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 /* Home -------------------- */
@@ -252,8 +253,6 @@ footer {
   -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
-  float: left;
-  margin: 0 30px 35px 0;
   overflow: hidden;
 }
 .screenshot img {
@@ -277,7 +276,7 @@ footer {
   border: 1px solid #faa;
   color: #fff;
   display: block;
-  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  font: bold 9pt Helvetica, Arial, sans-serif;
   margin: 0.05em 0 0.075em 0;
   padding: 0.5em 3.5em;
   text-align: center;
@@ -295,6 +294,8 @@ footer {
 
 ul.features {
   margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
   overflow: hidden;
   list-style-position: inside;
   list-style-type: none;
@@ -308,16 +309,36 @@ ul.features li {
   font-size: 18px;
 }
 
+.push-down {
+  margin-top: 25px;
+}
+
+.latest-post h3 {
+  border-bottom: 1px solid #999;
+  padding-bottom: 7px;
+  margin: 0 0 15px 0;
+}
+.latest-post a {
+  font-family: Abel, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14pt;
+}
+.latest-post a span {
+  color: #555;
+}
+
 ul.logos {
   list-style: none;
   margin: 10px 0 20px 0;
-  text-align: center;
 }
 ul.logos li {
   display: inline-block;
   text-align: center;
   font-size: 10pt;
-  margin: 0 15px;
+  margin-right: 22px;
+}
+ul.logos li:last-child {
+  margin-right: 0;
 }
 ul.logos li a {
   color: #404040;
@@ -351,6 +372,10 @@ ul.logos li a:hover {
   background-color: #fff;
 }
 
+.steps h3 span {
+  color: #d32e3f;
+}
+
 /* Blog -------------------- */
 .post h3 span {
   color: #555;
@@ -369,6 +394,9 @@ ul.logos li a:hover {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   margin: 15px 0;
+}
+.post blockquote {
+  border-color: #999;
 }
 
 .sidebar h3 {
