@@ -104,6 +104,14 @@ footer {
   padding-bottom: 10px;
 }
 
+aside {
+  p {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+}
+
 /* Home -------------------- */
 
 .screenshot {
@@ -236,14 +244,6 @@ ul.logos {
   font-size: 12pt;
   padding: 10px;
   margin: 5px 0;
-}
-
-.hint {
-  p {
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
-  }
 }
 
 .steps {

@@ -244,6 +244,12 @@ footer {
   padding-bottom: 10px;
 }
 
+aside p {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
 /* Home -------------------- */
 .screenshot {
   position: relative;
@@ -376,12 +382,6 @@ ul.logos li a:hover {
   font-size: 12pt;
   padding: 10px;
   margin: 5px 0;
-}
-
-.hint p {
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #fff;
 }
 
 .steps h3 span {

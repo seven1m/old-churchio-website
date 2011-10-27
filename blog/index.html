@@ -5,19 +5,19 @@ description: The blog of Church.IO, a community of people building open source c
 
 <h2>Church.IO Blog</h2>
 
-<div class="row">
+<section class="row">
   <div class="span12">
     <div id="posts">
-      <div class="post">
-        {% for post in site.posts %}
+      {% for post in site.posts %}
+        <article class="post">
           <h3><a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span> {{ post.title}}</a></h3>
           <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
           <p><a href="{{ post.url }}">read more...</a></p>
-        {% endfor %}
-      </div>
+        </article>
+      {% endfor %}
     </div>
   </div>
-  <div class="span4 hint">
+  <aside class="span4">
     <p>
       Subscribe to our
       <a href="/atom.xml">Atom Feed</a>.
@@ -30,5 +30,5 @@ description: The blog of Church.IO, a community of people building open source c
       <a href="mailto:tim@timmorgan.org">Tim</a>
       with your idea.
     </p>
-  </div>
-</div>
+  </aside>
+</section>

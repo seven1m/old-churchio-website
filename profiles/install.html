@@ -5,7 +5,7 @@ description: How to download and install Church.IO Profiles.
 
 <div class="steps">
   <h2>Install Church.IO Profiles</h2>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p class="alert-message block-message success">
         Profiles is <strong>free software</strong>. All you need is to download the source code
@@ -17,16 +17,16 @@ description: How to download and install Church.IO Profiles.
         <a href="http://groups.google.com/group/churchio">mailing list</a> and get some help.
       </p>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>
         If you find something wrong or confusing with these instructions, please submit an
         <a href="https://github.com/churchio/website/issues">issue on GitHub</a>.
       </p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
   <h3><span>1.</span> Create a Facebook "App"</h3>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p>
         For the sake of these instructions, let's pretend your church's name is "OneChurch of Grand Rapids."
@@ -43,7 +43,7 @@ description: How to download and install Church.IO Profiles.
         <li>Save changes.</li>
       </ol>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>
         Don't let this part scare you &mdash; all you have to do is to log into Facebook and enter a few bits of information
         to create what Facebook calls an "app."
@@ -53,11 +53,11 @@ description: How to download and install Church.IO Profiles.
         The app URL will be selected a bit later and will be <code><strong>something</strong>.herokuapp.com</code>. If the name you choose
         for your Heroku URL is already taken, you should choose another and come back to Facebook and change the website URL to match.
       </p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
   <h3><span>2.</span> Install Ruby and Git</h3>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p>
         You'll need to install Ruby and Git on your system in order to download and deploy to Heroku.
@@ -80,13 +80,13 @@ description: How to download and install Church.IO Profiles.
         </li>
       </ol>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>Be sure you're installing these on your own desktop/laptop computer &mdash; <strong>not your server</strong>.</p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
   <h3><span>3.</span> Download Profiles</h3>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p>
         We'll use Git to download the source code for Profiles, and then we'll select the stable version to deploy.
@@ -102,17 +102,17 @@ description: How to download and install Church.IO Profiles.
         git checkout -t origin/stable
       </p>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>
         On Windows, when you open a command prompt, you'll likely start in your
         "Users" directory. Be sure to <code>cd</code> into your Documents folder or
         another location you'll remember later.
       </p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
   <h3><span>4.</span> Configure Profiles</h3>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p>
         There are a few settings we need to configure before installation can occur.
@@ -139,7 +139,7 @@ description: How to download and install Church.IO Profiles.
         <li>Then copy and paste the displayed commands into the terminal.</li>
       </ol>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>
         If your chosen name is already taken, choose another and try again. Remember to go back to
         <a href="http://developers.facebook.com">developers.facebook.com</a> and update the website URL though.
@@ -148,11 +148,11 @@ description: How to download and install Church.IO Profiles.
         The <code>rake</code> command simply spits out the commands you need to
         type (or copy-paste) in order to configure the settings for Heroku.
       </p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
   <h3><span>5.</span> Deploy</h3>
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <p class="console">
         git push heroku<br/>
@@ -161,14 +161,14 @@ description: How to download and install Church.IO Profiles.
 
       <p>Now, visit your new site!</p>
     </div>
-    <div class="span4 hint">
+    <aside class="span4">
       <p>
         The first user to log in is the initial admin user, so log in fast! :-)
       </p>
-    </div>
-  </div>
+    </aside>
+  </section>
 
-  <div class="row">
+  <section class="row">
     <div class="span12">
       <h3><span>Getting Help</span></h3>
 
@@ -177,5 +177,5 @@ description: How to download and install Church.IO Profiles.
         chat room <a href="http://webchat.freenode.net/?channels=church.io&uio=d4">#church.io</a> on freenode.
       </p>
     </div>
-  </div>
+  </section>
 </div>
