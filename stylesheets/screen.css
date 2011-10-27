@@ -356,6 +356,17 @@ ul.logos li a:hover {
   margin: 0 15px;
 }
 
+.tweet-button {
+  display: inline-block;
+  width: 55px;
+  height: 21px;
+  background-image: url(http://platform.twitter.com/widgets/images/tweet.dfbf1dd98bad9f5b5addd80494650dca.png);
+  background-position: 0 0;
+}
+.tweet-button:hover {
+  background-position: 0 -21px;
+}
+
 /* Install -------------------- */
 .console {
   background-color: #333;
