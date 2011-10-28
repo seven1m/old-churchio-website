@@ -89,7 +89,7 @@ description: How to download and install Church.IO Profiles.
   <section class="row">
     <div class="span12">
       <p>
-        We'll use Git to download the source code for Profiles, and then we'll select the stable version to deploy.
+        We'll use Git to download the source code for Profiles.
       </p>
 
       <p>
@@ -99,7 +99,6 @@ description: How to download and install Church.IO Profiles.
       <p class="console">
         git clone git://github.com/churchio/profiles.git<br/>
         cd profiles<br/>
-        git checkout -t origin/stable
       </p>
     </div>
     <aside class="span4">
@@ -155,7 +154,7 @@ description: How to download and install Church.IO Profiles.
   <section class="row">
     <div class="span12">
       <p class="console">
-        git push heroku<br/>
+        git push heroku master<br/>
         heroku run rake db:migrate
       </p>
 
