@@ -56,6 +56,12 @@ description: How to download and install Church.IO Profiles.
     </aside>
   </section>
 
+  <ul class="tabs">
+    <li class="active"><a href="#" id="show-windows">Windows</a></li>
+    <li><a href="#" id="show-mac">Mac</a></li>
+    <li><a href="#" id="show-linux">Linux</a></li>
+  </ul>
+
   <h3><span>2.</span> Install Ruby and Git</h3>
   <section class="row">
     <div class="span12">
@@ -64,19 +70,39 @@ description: How to download and install Church.IO Profiles.
       </p>
 
       <ol>
-        <li>
-          Visit <a href="http://rubyinstaller.org/">rubyinstaller.org</a> (if you're on Windows) or <a href="http://www.ruby-lang.org/en/downloads/">ruby-lang.org</a>
-          (for Mac or Linux) and install the appropriate Ruby package.
+        <li class="windows">
+          Visit <a href="http://rubyinstaller.org/">rubyinstaller.org</a> and download the installer for Ruby 1.9.3.<br/>
+          <img src="/images/ruby_download.png" alt="Ruby Download"/>
+        </li>
+        <li class="windows">
+          During the Ruby install, you should choose to have the Ruby executables added to your path:<br/>
+          <img src="/images/add_ruby_to_path.png" alt="Add Ruby to your PATH"/>
+        </li>
+        <li class="mac">
+          You should already have Ruby on your Mac system. You can verify by running <code>ruby -v</code> and verifying it is version
+          1.8.7 or higher.
+        </li>
+        <li class="linux">
+          Use your system package manager to install Ruby, e.g. <code>sudo apt-get install ruby rubygems</code> (actual
+          command will depend on your particular distribution).
         </li>
         <li>
-          Once you have Ruby, install the <code>heroku</code> "gem" with the following command:
+          Once you have Ruby, open the <span class="windows">command prompt</span> <span class="mac linux">terminal</span>
+          and install the "heroku" gem with the following command:
           <div class="console">
-            gem install heroku
+            <span class="mac linux">sudo</span> gem install heroku
           </div>
         </li>
-        <li>
-          Visit <a href="http://git-scm.com/">git-scm.com</a> and click on your platform (Windows, Mac, or Linux) on the right
-          to get a download package for Git.
+        <li class="windows mac">
+          Visit <a href="http://git-scm.com/">git-scm.com</a> and click on <span class="windows">Windows</span>
+          <span class="mac">Mac</span> on the right to install Git.
+        </li>
+        <li class="windows">
+          Choose "Run Git from the Windows Command Prompt" when asked:<br/>
+          <img src="/images/git_install.png" alt="Add Git to your PATH"/>
+        </li>
+        <li class="linux">
+          Use your system package manager to install Git. On some systems, the package is called "git-core".
         </li>
       </ol>
     </div>
@@ -93,7 +119,8 @@ description: How to download and install Church.IO Profiles.
       </p>
 
       <p>
-        In a command prompt/terminal, change to the directory where you want to download the package, then type the following commands:
+        In the <span class="windows">command prompt</span> <span class="mac linux">terminal</span>,
+        change to the directory where you want to download the package, then type the following commands:
       </p>
 
       <p class="console">
@@ -101,9 +128,9 @@ description: How to download and install Church.IO Profiles.
         cd profiles<br/>
       </p>
     </div>
-    <aside class="span4">
+    <aside class="span4 windows">
       <p>
-        On Windows, when you open a command prompt, you'll likely start in your
+        When you open a command prompt, you'll likely start in your
         "Users" directory. Be sure to <code>cd</code> into your Documents folder or
         another location you'll remember later.
       </p>
@@ -125,6 +152,14 @@ description: How to download and install Church.IO Profiles.
             heroku create --stack cedar NAME
           </div>
         </li>
+        <li class="windows">
+          On the Start menu, open "Git Bash" and type the following:
+          <div class="console" style="background-color:#900;">
+            ssh-keygen
+          </div>
+          You can accept each default setting by just pressing <em>enter</em>. Once your key has been generated,
+          close this window and return to the command prompt for the next step.
+        </li>
         <li>
           Add your ssh key to Heroku:
           <div class="console">
@@ -138,8 +173,9 @@ description: How to download and install Church.IO Profiles.
         <li>
           Back in the terminal, type:
           <div class="console">
-            rake profiles:heroku:config
+            rake -f lib/tasks/heroku.rake -ryaml -r './app/models/setting' profiles:heroku:config  
           </div>
+          There are <strong style="color:#900">no line breaks</strong> in the above command.
         </li>
         <li>Then copy and paste the displayed commands into the terminal.</li>
       </ol>
@@ -187,3 +223,8 @@ description: How to download and install Church.IO Profiles.
     </div>
   </section>
 </div>
+
+<script>
+  showInstallBlock(location.hash || 'windows');
+  $('.tabs a').click(showInstallBlock);
+</script>
