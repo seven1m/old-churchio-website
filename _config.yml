@@ -25,5 +25,5 @@ google_analytics:
 github:
   username: churchio
 
-# disqus:
-#   id: disqusid
+disqus:
+  id: churchio
