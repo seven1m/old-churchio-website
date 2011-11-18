@@ -16,6 +16,10 @@ description: How to download and install Church.IO Profiles.
         If you want to install to another service or your own dedicated server, please hop onto the
         <a href="http://groups.google.com/group/churchio">mailing list</a> and get some help.
       </p>
+      <p>
+        If you have an existing install of Profiles and need to <strong>upgrade</strong>,
+        <a href="#upgrade">scroll down</a> to the bottom of this page and follow the upgrde instructions.
+      </p>
     </div>
     <aside class="span4">
       <p>
@@ -208,6 +212,33 @@ description: How to download and install Church.IO Profiles.
     <aside class="span4">
       <p>
         The first user to log in is the initial admin user, so log in fast! :-)
+      </p>
+    </aside>
+  </section>
+
+  <section class="row" id="upgrade">
+    <div class="span12">
+      <h3><span>Upgrade</span></h3>
+
+      <p>
+        Upgrading an existing install of Profiles should be fairly straightforward:
+      </p>
+
+      <div class="console">
+        git pull<br/>
+        git push heroku<br/>
+        heroku run rake db:migrate
+      </div>
+    </div>
+    <aside class="span4">
+      <p>
+        When you <code>git pull</code>, make sure there isn't a merge conflict. If there is a conflict, it's probably
+        because you changed a file that was also changed in the app.
+      </p>
+      <p>
+        You'll need to fix the conflict and make a commit.
+        Alternatively, you can run <code>git reset --hard origin/master</code> and blow away any changes you've made
+        (warning: you'll have to make your changes all over again).
       </p>
     </aside>
   </section>
