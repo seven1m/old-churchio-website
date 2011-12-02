@@ -9,3 +9,30 @@ function showInstallBlock(platform) {
   }
   return false;
 }
+
+SLIDESHOW_DELAY = 8000;
+SLIDE_HEIGHT = 332;
+
+var visibleSlide = 0;
+var slideshowTimeout;
+function advanceSlide() {
+  var slides = $('#slides .slide');
+  visibleSlide++
+  showSlide();
+  slideshowTimeout = setTimeout('advanceSlide()', SLIDESHOW_DELAY);
+}
+
+function showSlide() {
+  if(visibleSlide >= $('#slides .slide').length) visibleSlide = 0;
+  $('#slides .tray').css('top', '-' + (SLIDE_HEIGHT * visibleSlide) + 'px');
+  $('#slides .controls li').removeClass('selected').eq(visibleSlide).addClass('selected');
+}
+
+$(function() {
+  slideshowTimeout = setTimeout('advanceSlide()', SLIDESHOW_DELAY);
+  $('#slides .controls li').click(function(e) {
+    clearTimeout(slideshowTimeout);
+    visibleSlide++;
+    showSlide();
+  });
+});
