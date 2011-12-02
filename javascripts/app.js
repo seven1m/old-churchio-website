@@ -10,7 +10,7 @@ function showInstallBlock(platform) {
   return false;
 }
 
-SLIDESHOW_DELAY = 8000;
+SLIDESHOW_DELAY = 10000;
 SLIDE_HEIGHT = 332;
 
 var visibleSlide = 0;
