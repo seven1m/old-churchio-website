@@ -32,7 +32,7 @@ $(function() {
   slideshowTimeout = setTimeout('advanceSlide()', SLIDESHOW_DELAY);
   $('#slides .controls li').click(function(e) {
     clearTimeout(slideshowTimeout);
-    visibleSlide++;
+    visibleSlide = $('#slides .controls li').index(e.target);
     showSlide();
   });
 });
