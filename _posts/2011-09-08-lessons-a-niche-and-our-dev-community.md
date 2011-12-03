@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Lessons, A Niche, and Our Dev Community
 author: Tim Morgan
 authorurl: http://timmorgan.org
+
 ---
 
 *...and, we're back.*

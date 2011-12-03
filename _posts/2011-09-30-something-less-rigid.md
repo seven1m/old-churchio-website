@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Something Less Rigid
 author: Tim Morgan
 authorurl: http://timmorgan.org
+
 ---
 
 I wrote in [Church Software Continuum](http://church.io/church-software-continuum) that I think software tools for *engagement* are missing. You could argue that it's more a matter of confusing  and/or ambiguous terminology. Regardless, I think current tools do a  poor job of helping shepherds to connect with visitors and members.

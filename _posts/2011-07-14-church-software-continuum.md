@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Church Software Continuum
 author: Tim Morgan
 authorurl: http://timmorgan.org
+
 ---
 
 In speaking with [Christian software engineers](http://news.ycombinator.com/item?id=2746426) on Hacker News and last week's blog post about [better church software](http://church.io/better-church-software), it's clear that the term "church software" is nebulous at best.

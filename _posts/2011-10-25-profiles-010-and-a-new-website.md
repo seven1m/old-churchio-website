@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Profiles 0.1.0 and a New Website
 author: Tim Morgan
 authorurl: http://timmorgan.org
+
 ---
 
 ### First Version

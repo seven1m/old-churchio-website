@@ -1,8 +1,10 @@
 ---
+
 layout: post
 title: Better Church Software
 author: Tim Morgan
 authorurl: http://timmorgan.org
+
 ---
 
 I have a head full of ideas for writing better church software, and I don't know
