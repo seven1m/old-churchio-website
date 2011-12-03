@@ -6,6 +6,7 @@
       <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8">
     <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Abel|Architects+Daughter|Ubuntu+Mono' rel='stylesheet' type='text/css'>
@@ -31,6 +32,14 @@
     {% endif %}
   </head>
   <body>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+      <script type="text/javascript">
+        $(function() {
+          CFInstall.check({mode: "overlay"});
+        });
+      </script>
+    <![endif]-->
     <header>
       <div class="container">
         <nav>

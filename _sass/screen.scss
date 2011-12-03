@@ -3,6 +3,7 @@
 @import "compass/css3/text-shadow";
 @import "compass/css3/border-radius";
 @import "compass/css3/images";
+@import "compass/css3/transition";
 
 /* Generic -------------------- */
 
@@ -250,6 +251,9 @@ ul.logos {
   h3 span {
     color: #d32e3f;
   }
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 /* Blog -------------------- */
@@ -275,4 +279,44 @@ ul.logos {
 
 .sidebar h3 {
   margin-top: 15px;
+}
+
+/* Slideshow ----------------- */
+#slides {
+  margin-top: -7px;
+  margin-left: -17px;
+  position: relative;
+  .controls {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      width: 8px;
+      height: 8px;
+      margin: 0 0 3px 0;
+      background-color: #ccc;
+      @include single-transition(background-color, 0.5s);
+      &.selected {
+        background-color: #aaa;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    left: 10px;
+    top: 0px;
+    height: 325px;
+    overflow: hidden;
+  }
+  .tray {
+    position: absolute;
+    top: 0px;
+    @include single-transition(top, 0.5s, ease-out);
+  }
+  .slide {
+    margin: 7px 7px 20px 7px;
+  }
 }
