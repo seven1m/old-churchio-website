@@ -76,11 +76,11 @@ description: How to download and install Church.IO Profiles.
       <ol>
         <li class="windows">
           Visit <a href="http://rubyinstaller.org/">rubyinstaller.org</a> and download the installer for Ruby 1.9.3.<br/>
-          <img src="/images/ruby_download.png" alt="Ruby Download"/>
+          <img src="/images/screenshots/ruby_download.png" alt="Ruby Download"/>
         </li>
         <li class="windows">
           During the Ruby install, you should choose to have the Ruby executables added to your path:<br/>
-          <img src="/images/add_ruby_to_path.png" alt="Add Ruby to your PATH"/>
+          <img src="/images/screenshots/add_ruby_to_path.png" alt="Add Ruby to your PATH"/>
         </li>
         <li class="mac">
           You should already have Ruby on your Mac system. You can verify by running <code>ruby -v</code> and verifying it is version
@@ -91,7 +91,7 @@ description: How to download and install Church.IO Profiles.
           command will depend on your particular distribution).
         </li>
         <li>
-          Once you have Ruby, open the <span class="windows">command prompt</span> <span class="mac linux">terminal</span>
+          Once you have Ruby, open the <span class="windows">command prompt</span><span class="mac linux">terminal</span>
           and install the "heroku" gem with the following command:
           <div class="console">
             <span class="mac linux">sudo</span> gem install heroku
@@ -103,7 +103,7 @@ description: How to download and install Church.IO Profiles.
         </li>
         <li class="windows">
           Choose "Run Git from the Windows Command Prompt" when asked:<br/>
-          <img src="/images/git_install.png" alt="Add Git to your PATH"/>
+          <img src="/images/screenshots/git_install.png" alt="Add Git to your PATH"/>
         </li>
         <li class="linux">
           Use your system package manager to install Git. On some systems, the package is called "git-core".
@@ -123,7 +123,7 @@ description: How to download and install Church.IO Profiles.
       </p>
 
       <p>
-        In the <span class="windows">command prompt</span> <span class="mac linux">terminal</span>,
+        In the <span class="windows">command prompt</span><span class="mac linux">terminal</span>,
         change to the directory where you want to download the package, then type the following commands:
       </p>
 
@@ -175,15 +175,16 @@ description: How to download and install Church.IO Profiles.
           Set the <code>fb_app_id</code> and <code>fb_secret</code> to what you copied down from step one above.
         </li>
         <li>
-          Back in the terminal, type:
+          Back in the <span class="windows">command prompt</span><span class="mac linux">terminal</span>, type:
           <div class="console">
-            rake -f lib/tasks/heroku.rake -ryaml -r './app/models/setting' profiles:heroku:config  
+            rake -f lib/tasks/heroku.rake profiles:heroku:config  
           </div>
           There are <strong style="color:#900">no line breaks</strong> in the above command.
         </li>
-        <li>Then copy and paste the displayed commands into the terminal.</li>
+        <li>Then copy and paste the displayed commands into the
+          <span class="windows">command prompt</span><span class="mac linux">terminal</span>.</li>
         <li>
-          To set up outgoing email, type the following:
+          To set up outgoing email (optional; see note to the side), type the following:
           <div class="console">
             heroku addons:add sendgrid:starter
           </div>
@@ -201,6 +202,12 @@ description: How to download and install Church.IO Profiles.
       <p>
         The <code>rake</code> command simply spits out the commands you need to
         type (or copy-paste) in order to configure the settings for Heroku.
+      </p>
+      <p>
+        Setting up outgoing email (SendGrid) will require you to
+        <a href="http://devcenter.heroku.com/articles/account-verification">verify</a> your
+        account. Even though the add-on is free, Heroku requires you to enter credit
+        card information to enable it.
       </p>
     </aside>
   </section>
@@ -223,17 +230,51 @@ description: How to download and install Church.IO Profiles.
   </section>
 
   <h3 id="upgrade"><span>Upgrade</span></h3>
+
+  <p>
+    Upgrading an existing install of Profiles should be fairly straightforward
+    thanks to Heroku's deployment architecture.
+  </p>
+
+  <p>
+    Please follow the directions below for the version you're upgrading from + to.
+  </p>
+
+  <h4 id="upgrade-010-020">from 0.1.x to 0.2.0</h4>
   <section class="row">
     <div class="span12">
-      <p>
-        Upgrading an existing install of Profiles should be fairly straightforward:
-      </p>
-
-      <div class="console">
-        git pull<br/>
-        git push heroku master<br/>
-        heroku run rake db:migrate
-      </div>
+      <ol>
+        <li>
+          <div class="console">
+            git pull
+          </div>
+        </li>
+        <li>
+          Open up your <code>config/settings.yml</code> file and add the following at the bottom:
+          <pre style="margin-bottom:0;">smtp:
+  from_address: no-reply@example.com</pre>
+          (But change <code>@example.com</code> to the domain of your site instead.)
+        </li>
+        <li>
+          <div class="console">
+            rake -f lib/tasks/heroku.rake profiles:heroku:config  
+          </div>
+          ...and paste the output into your
+          <span class="windows">command prompt</span><span class="mac linux">terminal</span>.
+        </li>
+        <li>
+          To set up outgoing email (optional; see note to the side), type the following:
+          <div class="console">
+            heroku addons:add sendgrid:starter
+          </div>
+        </li>
+        <li>
+          <div class="console">
+            git push heroku master<br/>
+            heroku run rake db:migrate
+          </div>
+        </li>
+      </ol>
     </div>
     <aside class="span4">
       <p>
@@ -244,6 +285,12 @@ description: How to download and install Church.IO Profiles.
         You'll need to fix the conflict and make a commit.
         Alternatively, you can run <code>git reset --hard origin/master</code> and blow away any changes you've made
         (warning: you'll have to make your changes all over again).
+      </p>
+      <p>
+        Setting up outgoing email (SendGrid) will require you to
+        <a href="http://devcenter.heroku.com/articles/account-verification">verify</a> your
+        account. Even though the add-on is free, Heroku requires you to enter credit
+        card information to enable it.
       </p>
     </aside>
   </section>

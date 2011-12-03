@@ -387,6 +387,9 @@ ul.logos li a:hover {
 .steps h3 span {
   color: #d32e3f;
 }
+.steps li {
+  margin-bottom: 10px;
+}
 
 /* Blog -------------------- */
 .post h3 span {
