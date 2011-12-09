@@ -250,6 +250,11 @@ aside p {
   background-color: #fff;
 }
 
+code em {
+  font-style: normal;
+  color: red;
+}
+
 /* Home -------------------- */
 .screenshot {
   position: relative;

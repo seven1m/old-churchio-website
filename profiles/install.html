@@ -231,13 +231,34 @@ description: How to download and install Church.IO Profiles.
 
   <h3 id="upgrade"><span>Upgrade</span></h3>
 
-  <p>
-    Upgrading an existing install of Profiles should be fairly straightforward
-    thanks to Heroku's deployment architecture.
-  </p>
+  <section class="row">
+    <div class="span12">
+      <p>
+        To upgrade to a new point release (e.g. from <code>0.2.<em>0</em></code> to <code>0.2.<em>1</em></code>), run the following commands:
+      </p>
+
+      <div class="console">
+        git pull<br/>
+        git push heroku master<br/>
+        heroku run rake db:migrate
+      </div>
+    </div>
+    <aside class="span4">
+      <p>
+        When you <code>git pull</code>, make sure there isn't a merge conflict. If there is a conflict, it's probably
+        because you changed a file that was also changed in the app.
+      </p>
+      <p>
+        You'll need to fix the conflict and make a commit.
+        Alternatively, you can run <code>git reset --hard origin/master</code> and blow away any changes you've made
+        (<strong>warning</strong>: you'll have to make your changes all over again).
+      </p>
+    </aside>
+  </section>
 
   <p>
-    Please follow the directions below for the version you're upgrading from + to.
+    Major version upgrades (e.g. from <code>0.<em>1</em>.2</code> to <code>0.<em>2</em>.0</code>) require additional steps.
+    Follow the directions below for the version you are upgrading from/to.
   </p>
 
   <h4 id="upgrade-010-020">from 0.1.x to 0.2.0</h4>
@@ -277,15 +298,6 @@ description: How to download and install Church.IO Profiles.
       </ol>
     </div>
     <aside class="span4">
-      <p>
-        When you <code>git pull</code>, make sure there isn't a merge conflict. If there is a conflict, it's probably
-        because you changed a file that was also changed in the app.
-      </p>
-      <p>
-        You'll need to fix the conflict and make a commit.
-        Alternatively, you can run <code>git reset --hard origin/master</code> and blow away any changes you've made
-        (warning: you'll have to make your changes all over again).
-      </p>
       <p>
         Setting up outgoing email (SendGrid) will require you to
         <a href="http://devcenter.heroku.com/articles/account-verification">verify</a> your
