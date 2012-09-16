@@ -216,7 +216,7 @@ description: How to download and install Church.IO Profiles.
   <section class="row">
     <div class="span12">
       <p class="console">
-        git push heroku master<br/>
+        git push heroku v{{site.current_version}}:master<br/>
         heroku run rake db:migrate
       </p>
 
@@ -234,75 +234,18 @@ description: How to download and install Church.IO Profiles.
   <section class="row">
     <div class="span12">
       <p>
-        To upgrade to a new point release (e.g. from <code>0.2.<em>0</em></code> to <code>0.2.<em>1</em></code>), run the following commands:
+        To upgrade to a new release, run the following commands:
       </p>
 
       <div class="console">
         git pull<br/>
-        git push heroku master<br/>
+        git push heroku v{{site.current_version}}:master<br/>
         heroku run rake db:migrate
       </div>
     </div>
     <aside class="span4">
       <p>
-        When you <code>git pull</code>, make sure there isn't a merge conflict. If there is a conflict, it's probably
-        because you changed a file that was also changed in the app.
-      </p>
-      <p>
-        You'll need to fix the conflict and make a commit.
-        Alternatively, you can run <code>git reset --hard origin/master</code> and blow away any changes you've made
-        (<strong>warning</strong>: you'll have to make your changes all over again).
-      </p>
-    </aside>
-  </section>
-
-  <p>
-    Major version upgrades (e.g. from <code>0.<em>1</em>.2</code> to <code>0.<em>2</em>.0</code>) require additional steps.
-    Follow the directions below for the version you are upgrading from/to.
-  </p>
-
-  <h4 id="upgrade-010-020">from 0.1.x to 0.2.0</h4>
-  <section class="row">
-    <div class="span12">
-      <ol>
-        <li>
-          <div class="console">
-            git pull
-          </div>
-        </li>
-        <li>
-          Open up your <code>config/settings.yml</code> file and add the following at the bottom:
-          <pre style="margin-bottom:0;">smtp:
-  from_address: no-reply@example.com</pre>
-          (But change <code>@example.com</code> to the domain of your site instead.)
-        </li>
-        <li>
-          <div class="console">
-            rake -f lib/tasks/heroku.rake profiles:heroku:config  
-          </div>
-          ...and paste the output into your
-          <span class="windows">command prompt</span><span class="mac linux">terminal</span>.
-        </li>
-        <li>
-          To set up outgoing email (optional; see note to the side), type the following:
-          <div class="console">
-            heroku addons:add sendgrid:starter
-          </div>
-        </li>
-        <li>
-          <div class="console">
-            git push heroku master<br/>
-            heroku run rake db:migrate
-          </div>
-        </li>
-      </ol>
-    </div>
-    <aside class="span4">
-      <p>
-        Setting up outgoing email (SendGrid) will require you to
-        <a href="http://devcenter.heroku.com/articles/account-verification">verify</a> your
-        account. Even though the add-on is free, Heroku requires you to enter credit
-        card information to enable it.
+        Read our <a href="https://github.com/churchio/profiles/wiki/Upgrade-Help">Upgrade Help</a> page for more details.
       </p>
     </aside>
   </section>
