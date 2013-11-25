@@ -1,4 +1,0 @@
-<IfModule rewrite_module>
-  RewriteEngine On
-  RewriteRule ^profiles/$ /profiles/install.html [R,L]
-</IfModule>
