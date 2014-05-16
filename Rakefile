@@ -8,13 +8,13 @@ end
 desc 'Build site with Jekyll'
 task :build => :clean do
   compass
-  jekyll
+  jekyll('build')
 end
 
-desc 'Start server with --auto'
+desc 'Start server with --watch'
 task :server => :clean do
   compass
-  jekyll('--server --auto')
+  jekyll('server --watch')
 end
 
 desc 'Build and deploy'
@@ -56,7 +56,7 @@ def cleanup
   sh 'rm -rf _site'
 end
 
-def jekyll(opts = '')
+def jekyll(opts)
   sh 'jekyll ' + opts
 end
 
