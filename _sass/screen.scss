@@ -36,6 +36,7 @@ header {
   .logo {
     float: left;
     margin-right: 15px;
+    width: 70px;
   }
   .tagline {
     font-family: 'Architects Daughter', cursive;
@@ -122,8 +123,8 @@ code em {
 
 .screenshot {
   position: relative;
-  width: 512px;
-  height: 312px;
+  //width: 512px;
+  //height: 312px;
   @include single-box-shadow(rgba(0, 0, 0, 0.25), 0, 0, 5px, 3px);
   overflow: hidden;
   img {
@@ -325,4 +326,16 @@ ul.logos {
   .slide {
     margin: 7px 7px 20px 7px;
   }
+}
+
+.spaced {
+  p {
+    margin-top: 15px;
+  }
+}
+.big {
+  font-size: 16pt;
+}
+.centered {
+  text-align: center;
 }

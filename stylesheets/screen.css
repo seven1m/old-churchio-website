@@ -158,14 +158,13 @@ header {
   padding: 25px 0 35px 0;
   position: relative;
   z-index: 2;
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
-  -o-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 header, header h1, header a {
   color: #555;
-  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 header h1 {
   margin: 4px 0 0 0;
@@ -176,6 +175,7 @@ header h1 {
 header .logo {
   float: left;
   margin-right: 15px;
+  width: 70px;
 }
 header .tagline {
   font-family: 'Architects Daughter', cursive;
@@ -258,11 +258,8 @@ code em {
 /* Home -------------------- */
 .screenshot {
   position: relative;
-  width: 512px;
-  height: 312px;
-  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
@@ -278,9 +275,8 @@ code em {
   /* 45 deg ccw rotation */
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.25);
 }
 .screenshot .ribbon a {
@@ -292,14 +288,14 @@ code em {
   padding: 0.5em 3.5em;
   text-align: center;
   text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .headline {
   font-family: 'Architects Daughter', cursive;
   font-size: 24pt;
   color: #d32e3f;
-  text-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   margin: 0 0 20px 0;
 }
 
@@ -407,11 +403,10 @@ ul.logos li a:hover {
   text-align: center;
   background-color: #fff;
   padding: 10px;
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -khtml-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   margin: 15px 0;
 }
@@ -442,14 +437,10 @@ ul.logos li a:hover {
   height: 8px;
   margin: 0 0 3px 0;
   background-color: #ccc;
-  -moz-transition-property: background-color;
-  -webkit-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 #slides .controls li.selected {
   background-color: #aaa;
@@ -465,19 +456,23 @@ ul.logos li a:hover {
 #slides .tray {
   position: absolute;
   top: 0px;
-  -moz-transition-property: top;
-  -webkit-transition-property: top;
-  -o-transition-property: top;
-  transition-property: top;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  -webkit-transition: top 0.5s ease-out;
+  -moz-transition: top 0.5s ease-out;
+  -o-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
 }
 #slides .slide {
   margin: 7px 7px 20px 7px;
+}
+
+.spaced p {
+  margin-top: 15px;
+}
+
+.big {
+  font-size: 16pt;
+}
+
+.centered {
+  text-align: center;
 }

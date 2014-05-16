@@ -4,75 +4,15 @@ description: Church.IO is a community of people working to create easy-to-use an
 ---
 
 <section class="row">
-  <div class="span9">
-    <div id="slides">
-      <ul class="controls">
-        <li class="selected"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div class="container">
-        <div class="tray">
-          <div class="screenshot slide">
-            <a href="/images/screenshots/profile.jpg"><img src="/images/screenshots/profile.small.jpg" alt="Church.IO Profiles - Profile Page"/></a>
-          </div>
-          <div class="screenshot slide">
-            <a href="/images/screenshots/profile2.jpg"><img src="/images/screenshots/profile2.small.jpg" alt="Church.IO Profiles - Profile Page"/></a>
-          </div>
-          <div class="screenshot slide">
-            <a href="/images/screenshots/search.jpg"><img src="/images/screenshots/search.jpg" alt="Church.IO Profiles - Search Results"/></a>
-          </div>
-          <div class="screenshot slide">
-            <a href="/images/screenshots/dashboard.jpg"><img src="/images/screenshots/dashboard.small.jpg" alt="Church.IO Profiles - Admin Dashboard"/></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="span7">
-    <h2 class="headline">
-      The online directory your&nbsp;church will love.
-    </h2>
-
+  <div class="span16 centered spaced">
+    <p class="big">We're hard at work on OneBody 3.0.</p>
     <p>
-      <strong>Church.IO Profiles</strong> is an easy-to-use web app that an administrator can install
-      to effortlessly connect churchgoers online.
+      <a href="https://github.com/churchio/onebody" class="btn success" style="line-height:16pt;">
+        <img src="/images/octocat.png" style="height:16px;vertical-align:middle;"/>
+        GitHub Project Page
+      </a>
     </p>
-
-    <ul class="features">
-      <li>Create a profile via Facebook Connect.</li>
-      <li>Search for community members by name.</li>
-      <li>Get at-a-glance stats on community growth.</li>
-    </ul>
-
-    <div class="get">
-      <p>
-        <a href="/profiles/install.html" class="btn primary large">Install Version {{site.current_version}}*</a>
-        <a href="https://github.com/churchio/profiles" class="btn large">Get Involved</a><br/>
-      </p>
-      <p class="disclaimer">*Profiles is currently alpha-level software; there are <a href="https://github.com/churchio/profiles/issues?milestone=">bugs</a>.</p>
-    </div>
-  </div>
-</section>
-
-<section class="row push-down">
-  <div class="span9">
-    <ul class="logos">
-      <li><a href="https://github.com/churchio/profiles"><img src="/images/octocat.png" alt="Hosted on GitHub"/><br/>Open Source</a></li>
-      <li><a href="http://en.wikipedia.org/wiki/I18n"><img src="/images/world.png" alt="I18n-ready"/><br/>I18n-ready</a></li>
-      <li><a href="http://ruby-lang.org"><img src="/images/ruby.png" alt="Ruby"/><br/>Ruby</a></li>
-      <li><a href="http://www.postgresql.org"><img src="/images/postgres.png" alt="PostgreSQL"/><br/>PostgreSQL</a></li>
-      <li><a href="http://www.heroku.com"><img src="/images/heroku.png" alt="Heroku"/><br/>Heroku</a></li>
-      <li><a href="https://developers.facebook.com/docs/guides/web/"><img src="/images/facebook.png" alt="Facebook API"/><br/>Facebook API</a></li>
-    </ul>
-  </div>
-  <div class="span7">
-    <div class="latest-post">
-      <h3>Latest Blog Post</h3>
-      {% assign post = site.posts.first %}
-      <a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span> {{ post.title }}</a>
-    </div>
+    <p style="margin-top:25px;"><img src="/images/screenshots/onebody3.jpg" alt="OneBody 3.0" class="screenshot"/></p>
   </div>
 </section>
 
@@ -99,7 +39,7 @@ description: Church.IO is a community of people working to create easy-to-use an
       File a bug:
       <select onchange="if(this.value)location.href=this.value">
         <option value="">(select project)</option>
-        <option value="https://github.com/churchio/profiles/issues?milestone=">Profiles</option>
+        <option value="https://github.com/churchio/onebody/issues?milestone=">OneBody</option>
         <option value="https://github.com/churchio/website/issues?milestone=">This Website</option>
       </select>
     </li>
