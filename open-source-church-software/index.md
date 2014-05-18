@@ -16,6 +16,7 @@ Name                                                       | Type             | 
 [Open Source Church](http://sourceforge.net/projects/osc/) | ChMS             | GPLv2   | PHP             | Mar 2010
 [OpenLP](http://sourceforge.net/projects/openlp/)          | media projection | GPLv2   | Python          | Feb 2014
 [OpenSong](http://sourceforge.net/projects/opensong/)      | media projection | GPLv2   | REALbasic       | Mar 2014
+[Rock RMS](https://github.com/SparkDevNetwork/Rock)        | ChMS             | ?       | C♯ (.NET)       | May 2014
 [VpsX](http://sourceforge.net/projects/vpsx/)              | media projection | GPLv2   | MS Visual Basic | Feb 2006
 
 To suggest a addition or correction for this list, please [create an issue](https://github.com/churchio/website/issues).
