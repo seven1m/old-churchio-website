@@ -23,7 +23,7 @@ The GitHub, Ruby, Facebook, Heroku, and PostgreSQL logos (and any others present
 
 Background image copyright <a href="http://behindmyscenes.com/">Atle Mo</a>, licensed CC-BY-3.0.
 
-The ![Church.IO Logo](/churchio/website/raw/master/favicon.png) logo and the name Church.IO are trademark and copyright &copy; 2011, Tim Morgan and TJRM, Inc. All rights reserved. Do not use without permission.
+The ![Church.IO Logo](https://raw.githubusercontent.com/churchio/website/master/favicon.png) logo and the name Church.IO are trademark and copyright &copy; 2011, Tim Morgan and TJRM, Inc. All rights reserved. Do not use without permission.
 
 Other content is copyright &copy; 2011 Tim Morgan and TJRM, Inc., and is released under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
