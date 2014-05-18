@@ -4,7 +4,7 @@ layout: default
 
 # Open Source Church Software
 
-While searching the web, we built a list of [open source software](http://en.wikipedia.org/wiki/Open-source_software) for churches.
+After a bit of searching the web, we built a list of [open source software](http://en.wikipedia.org/wiki/Open-source_software) for churches.
 
 _Please note: we are not affiliated with any of these projects (except OneBody of course)._
 
@@ -17,6 +17,8 @@ Name                                                       | Type             | 
 [OpenLP](http://sourceforge.net/projects/openlp/)          | media projection | GPLv2   | Python          | Feb 2014
 [OpenSong](http://sourceforge.net/projects/opensong/)      | media projection | GPLv2   | REALbasic       | Mar 2014
 [VpsX](http://sourceforge.net/projects/vpsx/)              | media projection | GPLv2   | MS Visual Basic | Feb 2006
+
+To suggest a addition or correction for this list, please [create an issue](https://github.com/churchio/website/issues).
 
 <script src="/javascripts/tablesort.min.js"></script>
 <script>
