@@ -19,7 +19,7 @@ Name                                                       | Type             | 
 [Rock RMS](https://github.com/SparkDevNetwork/Rock)        | ChMS             | ?       | C♯ (.NET)       | May 2014
 [VpsX](http://sourceforge.net/projects/vpsx/)              | media projection | GPLv2   | MS Visual Basic | Feb 2006
 
-To suggest a addition or correction for this list, please [create an issue](https://github.com/churchio/website/issues).
+To suggest an addition or correction for this list, please [create an issue](https://github.com/churchio/website/issues).
 
 <script src="/javascripts/tablesort.min.js"></script>
 <script>
