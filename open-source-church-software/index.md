@@ -6,7 +6,7 @@ layout: default
 
 After a bit of searching the web, we built a list of [open source software](http://en.wikipedia.org/wiki/Open-source_software) for churches.
 
-_Please note: we are not affiliated with of these projects, except OneBody._
+_Please note: we are not affiliated with these projects, except OneBody._
 
 Name                                                       | Type             | License    | Tech            | Last Release
 ---------------------------------------------------------- | ---------------- | ---------- | --------------- | ------------
