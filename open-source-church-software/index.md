@@ -1,4 +1,5 @@
 ---
+title: List of Open Source Church Software
 layout: default
 ---
 
