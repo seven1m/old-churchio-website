@@ -15,9 +15,9 @@ Name                                                       | Type             | 
 [ChurchInfo](http://sourceforge.net/projects/churchinfo)   | ChMS             | GPLv2      | PHP             | Feb 2013
 [OneBody](https://github.com/churchio/onebody)             | member portal    | AGPLv3     | Ruby on Rails   | May 2014
 [Open Source Church](http://sourceforge.net/projects/osc/) | ChMS             | GPLv2      | PHP             | Mar 2010
-[OpenLP](http://sourceforge.net/projects/openlp/)          | media projection | GPLv2      | Python          | Feb 2014
+[OpenLP](http://sourceforge.net/projects/openlp/)          | media projection | GPLv2      | Python          | Jun 2014
 [OpenSong](http://sourceforge.net/projects/opensong/)      | media projection | GPLv2      | REALbasic       | Mar 2014
-[Rock RMS](https://github.com/SparkDevNetwork/Rock)        | ChMS             | Apache 2.0 | C♯ (.NET)       | May 2014
+[Rock RMS](https://github.com/SparkDevNetwork/Rock)        | ChMS             | Apache 2.0 | C♯ (.NET)       | Jun 2014
 [VpsX](http://sourceforge.net/projects/vpsx/)              | media projection | GPLv2      | MS Visual Basic | Feb 2006
 
 To suggest an addition or correction for this list, please [create an issue](https://github.com/churchio/website/issues).
