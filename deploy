@@ -1,0 +1,1 @@
+rsync -avz --stats --progress --delete --exclude=.git ./ church.io:~/website/
