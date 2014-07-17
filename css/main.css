@@ -124,20 +124,32 @@ ul.features li a {
   color: #fff;
 }
 
-.feature-list-container {
-  width: 800px;
-  margin: 0 auto;
-}
-
 .feature-list {
-  width: 800px;
   font-size: 20px;
-  margin-left: 50px;
 }
 
-.feature-list li {
-  display: inline-block;
-  width: 250px;
+@media(max-width:899px) {
+  .feature-list li {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width:900px) {
+  .feature-list-container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .feature-list {
+    width: 800px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .feature-list li {
+    display: inline-block;
+    width: 250px;
+  }
 }
 
 #image-login {
