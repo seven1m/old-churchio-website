@@ -109,11 +109,14 @@ header .intro-text .features {
 
 ul.features {
   list-style: none;
+  padding: 0;
 }
 
-ul.features li {
-  display: inline-block;
-  margin-right: 15px;
+@media(min-width: 350px) {
+  ul.features li {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }
 
 ul.features li a {
