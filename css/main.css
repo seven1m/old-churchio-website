@@ -308,7 +308,7 @@ section.success {
 }
 
 .btn-outline {
-  margin-top: 15px;
+  margin: 15px 10px 0 10px;
   font-size: 30px;
   background: 0 0;
   transition: all .3s ease-in-out;
@@ -500,7 +500,7 @@ footer .footer-below {
   transform: rotate(90deg);
 }
 
-p {
+install {
   margin-bottom: 25px;
 }
 
