@@ -1,1 +1,7 @@
+#!/bin/bash
+
+set -e
+
+mkdir -p onebody
+gitbook build ../onebody-help --output=./onebody/help/
 rsync -avz --stats --progress --delete --exclude=.git ./ church.io:~/website/
