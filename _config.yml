@@ -20,5 +20,4 @@ markdown: kramdown
 
 # Bootstrap include
 sass:
-  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
   style: compressed

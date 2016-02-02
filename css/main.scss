@@ -4,5 +4,11 @@
 @charset "utf-8";
 
 $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$brand-primary: #18BC9C;
 
-@import "bootstrap";
+
+@import "fonts";
+@import "navbar";
+@import "body";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
