@@ -6,3 +6,13 @@ $navbar-default-color: white;
 
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: $brand-primary;
+
+.navbar-churchio {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.navbar-churchio li {
+    font-size: 75%;
+}
