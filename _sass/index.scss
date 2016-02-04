@@ -1,10 +1,11 @@
-#churchio-logo {
-    height: 10em;
+.section-padded {
+    width: 100%;
+    padding: 2.5em 0;
 }
 
-#churchio-title {
-    padding-top: 5em;
-    padding-bottom: 5em;
+#churchio-logo {
+    max-width: 35vw;
+    max-height: 10em;
 }
 
 .project-logo {
