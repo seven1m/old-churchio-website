@@ -4,6 +4,8 @@
 @charset "utf-8";
 
 $icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
 $brand-primary: #18BC9C;
 
 $churchio-bg-light: $brand-primary;
@@ -14,5 +16,8 @@ $churchio-bg-dark: #2C3E50;
 @import "body";
 
 @import "index";
+@import "onebody";
+@import "cedar";
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
