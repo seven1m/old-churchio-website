@@ -2,3 +2,72 @@
     max-width: 35vw;
     max-height: 10em;
 }
+
+.onebody-menu {
+    @extend .text-center;
+    font-size: 125%;
+}
+
+.onebody-menu-item {
+    @extend .visible-xs-block;
+    @extend .visible-sm-block;
+    @extend .visible-md-inline-block;
+    @extend .visible-lg-inline-block;
+    color: white;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+}
+
+.onebody-menu-item a {
+    color: white;
+}
+
+.onebody-features {
+    @extend .row;
+}
+
+.onebody-feature {
+    @extend .col-xs-12;
+    @extend .col-sm-6;
+    @extend .col-md-4;
+    @extend .col-lg-3;
+}
+
+hr.star-light,
+hr.star-primary {
+  margin: 25px auto 30px;
+  padding: 0;
+  max-width: 250px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.star-light {
+  border-color: #fff;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+hr.star-primary {
+  border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+  color: #2c3e50;
+  background-color: #fff;
+}
