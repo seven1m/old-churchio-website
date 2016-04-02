@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+jekyll build
+gitbook build ../onebody-help --output=./onebody/help/
+rsync -avz --stats --progress --delete --exclude=.git --exclude downloads _site/ new.church.io:/var/www/statics/new.church.io/
