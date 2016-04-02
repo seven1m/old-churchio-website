@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="257.8752"
-     inkscape:cy="-35.099894"
+     inkscape:zoom="1"
+     inkscape:cx="180.75062"
+     inkscape:cy="67.117258"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="1600"
-     inkscape:window-y="27"
+     inkscape:window-width="2560"
+     inkscape:window-height="1391"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      units="mm"
      fit-margin-top="0"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,10 +70,10 @@
        inkscape:export-ydpi="619.34998"
        inkscape:export-xdpi="619.34998"
        inkscape:export-filename="/home/tim/Dropbox/church.io/logos/logo.png"
-       sodipodi:nodetypes="ssccssscccccccccss"
+       sodipodi:nodetypes="csccssscccccccccssc"
        inkscape:connector-curvature="0"
        id="path3228"
-       d="m 422.5019,434.35019 c -52.53242,0 -95.18451,42.65209 -95.18451,95.18451 0,16.11773 4.10526,31.30756 11.18891,44.59804 l 27.4207,-24.74167 c -2.19961,-6.22524 -3.46699,-12.87696 -3.46699,-19.85637 0,-33.10691 26.93498,-60.04188 60.04189,-60.04188 33.10691,0 59.88429,26.93497 59.88429,60.04188 0,32.15169 -25.26719,58.24263 -57.04767,59.72671 -58.18963,0.12304 55.05891,0.0252 -10.08577,0 l -19.30695,0 -0.0454,-19.61225 -37.55292,36.77385 37.77582,39.15333 -0.17751,-21.17231 22.61634,0 c 2.92094,-0.0101 4.52357,0.0101 6.77638,0 51.21058,-1.50419 92.1903,-43.29047 92.1903,-94.86933 0,-52.53242 -42.4945,-95.18451 -95.02692,-95.18451 z"
+       d="m 422.5019,434.35019 c -52.53242,0 -95.18451,42.65209 -95.18451,95.18451 0,16.11773 4.10526,31.30756 11.18891,44.59804 l 27.4207,-24.74167 c -2.19961,-6.22524 -3.46699,-12.87696 -3.46699,-19.85637 0,-33.10691 26.93498,-60.04188 60.04189,-60.04188 33.10691,0 59.88429,26.93497 59.88429,60.04188 0,32.15169 -25.26719,58.24263 -57.04767,59.72671 -58.18963,0.12304 39.2657,0.19638 -25.55473,0.11714 l -3.83799,-0.0586 -0.0454,-19.67082 -37.55292,36.77385 37.77582,39.15333 -0.17751,-21.17231 22.61634,0 c 2.92094,-0.0101 4.52357,0.0101 6.77638,0 51.21058,-1.50419 92.1903,-43.29047 92.1903,-94.86933 0,-52.53242 -42.4945,-95.18451 -95.02691,-95.18451 z"
        style="fill:none;stroke:#2c3e50;stroke-width:5.04288816;stroke-opacity:1" />
   </g>
 </svg>

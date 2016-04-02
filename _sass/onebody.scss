@@ -1,36 +1,40 @@
 .onebody-logo {
-    max-width: 35vw;
-    max-height: 10em;
+  max-width: 35vw;
+  max-height: 10em;
 }
 
 .onebody-menu {
-    @extend .text-center;
-    font-size: 125%;
+  @extend .text-center;
+  font-size: 125%;
 }
 
 .onebody-menu-item {
-    @extend .visible-xs-block;
-    @extend .visible-sm-block;
-    @extend .visible-md-inline-block;
-    @extend .visible-lg-inline-block;
-    color: white;
-    margin-left: 0.75em;
-    margin-right: 0.75em;
+  @extend .visible-xs-block;
+  @extend .visible-sm-block;
+  @extend .visible-md-inline-block;
+  @extend .visible-lg-inline-block;
+  color: white;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
 }
 
 .onebody-menu-item a {
-    color: white;
+  color: white;
 }
 
 .onebody-features {
-    @extend .row;
+  @extend .row;
 }
 
 .onebody-feature {
-    @extend .col-xs-12;
-    @extend .col-sm-6;
-    @extend .col-md-4;
-    @extend .col-lg-3;
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-md-4;
+  @extend .col-lg-3;
+  i {
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
 
 hr.star-light,
@@ -70,4 +74,13 @@ hr.star-primary {
 hr.star-primary:after {
   color: #2c3e50;
   background-color: #fff;
+}
+
+#image-login {
+  max-width: 350px;
+  margin: 25px auto;
+}
+
+.install-button-wrapper {
+  margin: 30px 0 40px 0;
 }
