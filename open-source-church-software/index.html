@@ -1,0 +1,95 @@
+---
+layout: default
+title: Church.IO - List of Open Source Church Software
+---
+
+<section>
+  <div class="container">
+    <h1>Open Source Church Software</h1>
+
+    <p>After a bit of searching the web, we built a list of <a href="http://en.wikipedia.org/wiki/Open-source_software">open source software</a> for churches.</p>
+
+    <p><em>We are only affiliated with Cedar and OneBody. Also, this list has recently been culled of projects that haven't made a release in the last 5 years.</em></p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>License</th>
+          <th>Tech</th>
+          <th>Last Release</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/bvcms/bvcms">BVCMS</a></td>
+          <td>ChMS</td>
+          <td>GPLv2</td>
+          <td>C♯ (.NET)</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/cedarsuite/cedarserver">Cedar</a></td>
+          <td>media projection</td>
+          <td>MIT</td>
+          <td>JavaScript (Meteor)</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td><a href="http://sourceforge.net/projects/churchinfo">ChurchInfo</a></td>
+          <td>ChMS</td>
+          <td>GPLv2</td>
+          <td>PHP</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/churchio/onebody">OneBody</a></td>
+          <td>member portal</td>
+          <td>AGPLv3</td>
+          <td>Ruby on Rails</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td><a href="http://sourceforge.net/projects/openlp/">OpenLP</a></td>
+          <td>media projection</td>
+          <td>GPLv2</td>
+          <td>Python</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td><a href="http://sourceforge.net/projects/opensong/">OpenSong</a></td>
+          <td>media projection</td>
+          <td>GPLv2</td>
+          <td>REALbasic</td>
+          <td>2014</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/SparkDevNetwork/Rock">Rock RMS</a></td>
+          <td>ChMS</td>
+          <td>Apache 2.0</td>
+          <td>C♯ (.NET)</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td><a href="http://sourceforge.net/projects/softprojector/">SoftProjector</a></td>
+          <td>media projection</td>
+          <td>GPLv3</td>
+          <td>Qt/C++</td>
+          <td>2014</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>To suggest an addition or correction for this list, please <a href="https://github.com/churchio/website/issues">create an issue</a>.</p>
+  </div>
+</section>
+
+<link href="/css/tablesort.css" rel="stylesheet" type="text/css">
+<script src="/js/tablesort.min.js"></script>
+
+<script>
+ var table = $('table').addClass('zebra-striped');
+ ts = new Tablesort(table[0]);
+ ts.sortTable(table.find('th:first-child')[0]);
+</script>
