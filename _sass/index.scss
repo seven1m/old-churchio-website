@@ -1,0 +1,37 @@
+.section-padded {
+  width: 100%;
+  padding: 2.5em 0;
+}
+
+.section-extra-padded {
+  padding: 4em 0;
+}
+
+#churchio-logo {
+  max-width: 35vw;
+  max-height: 10em;
+}
+
+.project {
+  @extend .clearfix;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.project-logo {
+  height: 125px;
+}
+
+.list-features {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.projects-heading {
+  text-align: center;
+  margin: 25px 0 50px 0;
+}

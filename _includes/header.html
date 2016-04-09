@@ -1,0 +1,32 @@
+<header class="site-header">
+  <nav class="navbar navbar-default navbar-churchio">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand-churchio navbar-brand" href="/">Church.IO</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="site-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/onebody">OneBody</a></li>
+          <li><a href="/cedar">Cedar</a></li>
+          <li><a href="/apostello">apostello</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+ // Quick script to activate the current page's menu link. Probably should be done by the templates instead though, TODO.
+ jQuery(document).ready(function() {
+   jQuery('#site-navbar a[href="' + this.location.pathname + '"]').parent().addClass('active');
+ });
+</script>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="82.717133mm"
+   height="73.349037mm"
+   id="svg3211"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="churchio-logo.svg">
+  <defs
+     id="defs3213" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="153.75622"
+     inkscape:cy="119.51384"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="1600"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3216">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-226.95806,-391.97786)">
+    <g
+       id="g3335">
+      <path
+         style="fill:none;stroke:#187eff;stroke-width:5.04288816;stroke-opacity:1"
+         d="m 233.89975,435.16341 47.65585,-39.88214 46.97975,40.22011 -29.06666,5e-5 0,188.93316 -36.50228,0 0,-189.27113 z"
+         id="path3226"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:export-filename="/home/tim/Dropbox/church.io/logos/logo.png"
+         inkscape:export-xdpi="619.34998"
+         inkscape:export-ydpi="619.34998" />
+      <path
+         style="fill:none;stroke:#187eff;stroke-width:5.04288816;stroke-opacity:1"
+         d="m 422.5019,434.35019 c -52.53242,0 -95.18451,42.65209 -95.18451,95.18451 0,16.11773 4.10526,31.30756 11.18891,44.59804 l 27.4207,-24.74167 c -2.19961,-6.22524 -3.46699,-12.87696 -3.46699,-19.85637 0,-33.10691 26.93498,-60.04188 60.04189,-60.04188 33.10691,0 59.88429,26.93497 59.88429,60.04188 0,32.15169 -25.26719,58.24263 -57.04767,59.72671 -58.18963,0.12304 55.05891,0.0252 -10.08577,0 l -19.30695,0 -0.0454,-19.61225 -37.55292,36.77385 37.77582,39.15333 -0.17751,-21.17231 22.61634,0 c 2.92094,-0.0101 4.52357,0.0101 6.77638,0 51.21058,-1.50419 92.1903,-43.29047 92.1903,-94.86933 0,-52.53242 -42.4945,-95.18451 -95.02692,-95.18451 z"
+         id="path3228"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ssccssscccccccccss"
+         inkscape:export-filename="/home/tim/Dropbox/church.io/logos/logo.png"
+         inkscape:export-xdpi="619.34998"
+         inkscape:export-ydpi="619.34998" />
+    </g>
+  </g>
+</svg>
