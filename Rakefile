@@ -1,6 +1,6 @@
 desc 'Build the site'
 task :build do
-  sh 'jekyll build'
+  sh 'bundle exec jekyll build'
   sh 'gitbook build ../onebody-help --output=./onebody/help/'
 end
 
