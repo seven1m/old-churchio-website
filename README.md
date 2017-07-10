@@ -1,6 +1,6 @@
 # Church.IO Website
 
-the http://church.io website
+the https://church.io website
 
 ## Copyright
 
